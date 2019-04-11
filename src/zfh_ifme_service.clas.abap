@@ -870,7 +870,6 @@ CLASS zfh_ifme_service IMPLEMENTATION.
     " import XML file
     TRY.
         DATA(db_service) = cl_ifme_db_service_factory=>get_instance( )->get_db_writer( hierarchytree ).
-        db_service->delete_version( VALUE ifme_pk_fmtvers( hierarchytree = hierarchytree hierarchytreetype = hierarchytreetype hierarchytreeversion = cl_ifme_hierarchytreeversion=>maint ) ).
         db_service->create_version( xml_upload->get_tree_data( ) ).
       CATCH cx_ifme_db.
         MESSAGE e013 INTO msg.
