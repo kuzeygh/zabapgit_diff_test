@@ -6,7 +6,6 @@ CLASS zfh_test_diff DEFINITION
   PUBLIC SECTION.
     methods test.
   PROTECTED SECTION.
-  PRIVATE SECTION.
 ENDCLASS.
 
 
@@ -14,7 +13,8 @@ ENDCLASS.
 CLASS zfh_test_diff IMPLEMENTATION.
 
   METHOD test.
-    write: `more changes`.
+    write: `changed`.
+    write: `added`.
   ENDMETHOD.
 
 ENDCLASS.
