@@ -14,7 +14,7 @@ ENDCLASS.
 CLASS zfh_test_diff IMPLEMENTATION.
 
   METHOD test.
-
+    write: `more changes`.
   ENDMETHOD.
 
 ENDCLASS.
